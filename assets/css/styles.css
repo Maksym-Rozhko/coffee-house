@@ -8,7 +8,8 @@ html, body {
     font-size: 62.5%;
     font-weight: normal;
     font-style: normal;
-    color: #fff;
+    color: #000;
+    font-family: 'Merienda', sans-serif;
 }
 
 img {
@@ -39,4 +40,244 @@ ul, ol {
 h1, h2, h3, h4, p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.wrapper {
+    max-width: 80rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__container {
+    max-width: 110.4rem;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: #fff;
+    text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+.nav__link--text {
+    height: 3.4rem;
+    align-items: flex-end;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.main-screen {
+    background-image: url('../images/home/main-screen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-screen__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    color: #FFFFFF;
+    text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+.logo-box {
+    position: relative;
+    max-width: 20rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-box.black::before, 
+.logo-box.black::after {
+    border: .1rem solid #000;
+}
+
+.logo-box::before,
+.logo-box::after {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: .1rem;
+    border: .1rem solid #FFFFFF;
+    top: calc(50% - 1px);
+    box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+.logo-box::before {
+    left: 0;
+}
+
+.logo-box::after {
+    right: 0;
+}
+
+.logo-box .icon {
+    width: 2.9rem;
+    height: 2.8rem;
+}
+
+.logo-box .icon.white {
+    fill: #fff;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    color: #FFFFFF;
+}
+
+.main-screen .text--mb {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 1rem;
+    max-width: 12rem;
+    width: 100%;
+    border: .1rem solid #FFFFFF;
+    filter: drop-shadow(0rem .4rem .4rem rgba(0, 0, 0, 0.25));
+    box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: .3rem;
+    background-color: transparent;
+    color: #fff;
+    transition: all ease-in-out .4s;
+}
+
+.button:hover {
+    background: #FFFFFF;
+    border: .1rem solid transparent;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.25);
+    border-radius: .4rem 0rem 0rem .4rem;
+    color: #000;
+}
+
+.about {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.page-title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
+
+.page-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.page-text--mb {
+    margin-bottom: 4rem;
+}
+
+.about .page-text {
+    max-width: 59rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.best {
+    background-image: url('../images/home/our-best-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 11rem;
+}
+
+.best .page-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.best__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best__item {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: .8rem;
+    padding: 2.2rem 3.3rem;
+}
+
+.best__item .image {
+    max-width: 15rem;
+    margin: 0 auto;
+    height: 130px;
+}
+
+.best__title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.best__price {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer .nav__link {
+    color: #000;
+}
+
+.footer .nav__list {
+    justify-content: center;
+}
+
+.footer .logo-box {
+    margin-top: 3rem;
 }
