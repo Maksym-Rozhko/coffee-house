@@ -281,3 +281,118 @@ h1, h2, h3, h4, p {
 .footer .logo-box {
     margin-top: 3rem;
 }
+
+.category {
+    background-image: url('../images/about/main-screen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 13rem;
+    padding-bottom: 8.4rem;
+}
+
+.beans {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+
+.beans__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+.beans__container::after {
+    content: "";
+    position: absolute;
+    width: 24rem;
+    border-bottom: .1rem solid #000000;
+    bottom: 0;
+    left: calc(50% - 12rem);
+}
+
+.beans__info {
+    max-width: 34.5rem;
+    margin-left: 7rem;
+    text-align: center;
+}
+
+.beans .logo-box {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-text--mb {
+    margin-bottom: 2.5rem;
+}
+
+.categories {
+    padding-bottom: 3rem;
+}
+
+.categories__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    gap: 2.5rem;
+}
+
+.search__input {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.25);
+    border-radius: .4rem;
+    border: none;
+    padding: .6rem;
+    text-align: center;
+    max-width: 18rem;
+    width: 100%;
+}
+
+.filter,
+.filter__btns,
+.search__form {
+    display: flex;
+    align-items: center;
+}
+
+.search__label {
+    margin-left: 2rem;
+}
+
+.filter__btns {
+    margin-left: 3.5rem;
+    gap: 2rem;
+}
+
+.filter__button {
+    color: #000;
+    background: #FFFFFF;
+    box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.25);
+    border-radius: .4rem 0rem 0rem .4rem;
+}
+
+.filter__button:hover {
+    border: .1rem solid #000;
+}
+
+.categories__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.categories .best__item {
+    padding: 2.2rem;
+    background: #FFFFFF;
+    filter: drop-shadow(.5rem .5rem 1.5rem rgba(0, 0, 0, 0.25));
+}

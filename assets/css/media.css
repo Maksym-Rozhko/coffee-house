@@ -35,6 +35,14 @@
     .best .page-title {
         margin-bottom: 2rem;
     }
+    .beans {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .categories__filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 @media (max-width : 620px) {
     .title {
@@ -46,6 +54,16 @@
         font-size: 1.8rem;
         line-height: 2.2rem;
         text-align: center;
+    }
+    .beans__container {
+        flex-direction: column-reverse;
+    }
+    .beans__info {
+        margin-left: 0;
+        margin-bottom: 4rem;
+    }
+    .categories__container {
+        gap: 3rem;
     }
 }
 @media (max-width : 533px) {
@@ -69,8 +87,28 @@
         margin-top: 1rem;
         margin-bottom: 0rem;
     }
+    .categories__filter {
+        justify-content: flex-start;
+    }
+    .filter {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .filter__btns {
+        margin-left: 0;
+    }
 }
 @media (max-width : 360px) {
-
+    .search__form {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .search__label {
+        margin-left: 0;
+        width: 100%;
+    }
+    .search__input {
+        max-width: inherit;
+    }
 }
 @media (max-width : 320px) {}
