@@ -400,3 +400,32 @@ h1, h2, h3, h4, p {
 .category.products {
     background-image: url('../images/products/main-screen.jpg');
 }
+
+.product .beans__container::after {
+    content: none;
+    padding-bottom: 0;
+}
+
+.product .beans__info {
+    text-align: left;
+}
+
+.product .page-title {
+    text-align: center;
+}
+
+.product .product__price {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.product .product__price .label {
+    font-weight: 400;
+    margin-right: 10px;
+}
+.product .product__price .price {
+    font-weight: 700;
+    font-size: 26px;
+}
